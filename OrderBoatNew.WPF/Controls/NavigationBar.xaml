@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="OrderBoatNew.WPF.Controls.NavigationBar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:OrderBoatNew.WPF.Controls"
+             xmlns:nav="clr-namespace:OrderBoatNew.WPF.State.Navigators"
+             xmlns:vm="clr-namespace:OrderBoatNew.WPF.ViewModels"
+             xmlns:converters="clr-namespace:OrderBoatNew.WPF.Converters"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+    
+    <UserControl.Resources>
+        <converters:EqualValueToParameterConverter x:Key="EqualValueToParameterConverter"/>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Text="Заказ лодки"
+                   Padding="10"
+                   FontSize="21"
+                   Background="{StaticResource LightBlueBrush}" />
+        <Grid Grid.Row="1"
+              RenderOptions.EdgeMode="Aliased"
+              Background="{StaticResource BlueBrush}">
+            <Grid.Resources>
+                <Style TargetType="RadioButton"
+                       BasedOn="{StaticResource NavigationButton}" />
+            </Grid.Resources>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <RadioButton Grid.Column="0" Content="Лодки"
+                         IsChecked="{Binding CurrentViewModel, Mode=OneWay,
+                         Converter={StaticResource EqualValueToParameterConverter},
+                         ConverterParameter={x:Type vm:BoatViewModel}}"
+                         Command="{Binding UpdateCurrentViewModelCommand}"
+                         CommandParameter="{x:Static nav:ViewType.Boats}" />
+            <RadioButton Grid.Column="1" Content="Лодочные аксессуары"
+                         IsChecked="{Binding CurrentViewModel, Mode=OneWay,
+                         Converter={StaticResource EqualValueToParameterConverter},
+                         ConverterParameter={x:Type vm:BoatAccessoryViewModel}}"
+                         Command="{Binding UpdateCurrentViewModelCommand}"
+                         CommandParameter="{x:Static nav:ViewType.BoatsAccessory}" />
+        </Grid>
+    </Grid>
+</UserControl>

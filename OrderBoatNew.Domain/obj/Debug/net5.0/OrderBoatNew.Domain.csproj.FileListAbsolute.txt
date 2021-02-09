@@ -1,0 +1,12 @@
+D:\RiderProjects\OrderBoatNew\OrderBoatNew.Domain\bin\Debug\net5.0\OrderBoatNew.Domain.deps.json
+D:\RiderProjects\OrderBoatNew\OrderBoatNew.Domain\bin\Debug\net5.0\OrderBoatNew.Domain.dll
+D:\RiderProjects\OrderBoatNew\OrderBoatNew.Domain\bin\Debug\net5.0\ref\OrderBoatNew.Domain.dll
+D:\RiderProjects\OrderBoatNew\OrderBoatNew.Domain\bin\Debug\net5.0\OrderBoatNew.Domain.pdb
+D:\RiderProjects\OrderBoatNew\OrderBoatNew.Domain\obj\Debug\net5.0\OrderBoatNew.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\OrderBoatNew\OrderBoatNew.Domain\obj\Debug\net5.0\OrderBoatNew.Domain.AssemblyInfoInputs.cache
+D:\RiderProjects\OrderBoatNew\OrderBoatNew.Domain\obj\Debug\net5.0\OrderBoatNew.Domain.AssemblyInfo.cs
+D:\RiderProjects\OrderBoatNew\OrderBoatNew.Domain\obj\Debug\net5.0\OrderBoatNew.Domain.csproj.CoreCompileInputs.cache
+D:\RiderProjects\OrderBoatNew\OrderBoatNew.Domain\obj\Debug\net5.0\OrderBoatNew.Domain.dll
+D:\RiderProjects\OrderBoatNew\OrderBoatNew.Domain\obj\Debug\net5.0\ref\OrderBoatNew.Domain.dll
+D:\RiderProjects\OrderBoatNew\OrderBoatNew.Domain\obj\Debug\net5.0\OrderBoatNew.Domain.pdb
+D:\RiderProjects\OrderBoatNew\OrderBoatNew.Domain\obj\Debug\net5.0\OrderBoatNew.Domain.csprojAssemblyReference.cache

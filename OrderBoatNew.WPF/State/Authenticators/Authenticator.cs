@@ -36,20 +36,9 @@ namespace OrderBoatNew.WPF.State.Authenticators
             return await _authenticationService.Register(email, username, password, confirmPassword);
         }
 
-        public async Task<bool> Login(string username, string password)
+        public async Task Login(string username, string password)
         {
-            bool success = true;
-
-            try
-            {
-                CurrentUser = await _authenticationService.Login(username, password);
-            }
-            catch (Exception)
-            {
-                success = false;
-            }
-
-            return success;
+            CurrentUser = await _authenticationService.Login(username, password);
         }
 
         public void Logout() => CurrentUser = null;

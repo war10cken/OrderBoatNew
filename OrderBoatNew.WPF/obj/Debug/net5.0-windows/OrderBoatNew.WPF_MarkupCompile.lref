@@ -1,4 +1,4 @@
-﻿D:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\obj\Debug\net5.0-windows\GeneratedInternalTypeHelper.g.cs
+﻿
 FD:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\App.xaml;;
 FD:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\Controls\BoatCard.xaml;;
 FD:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\Controls\BoatListing.xaml;;
@@ -7,4 +7,5 @@ FD:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\MainWindow.xaml;;
 FD:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\Views\BoatsAccessoryView.xaml;;
 FD:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\Views\BoatsView.xaml;;
 FD:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\Views\LoginView.xaml;;
+FD:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\Views\RegisterView.xaml;;
 

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 D:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\App.xaml
-9-2042030358
+10-289500464
 
-31-1854009392
-218770519107
-Controls\BoatCard.xaml;Controls\BoatListing.xaml;Controls\NavigationBar.xaml;MainWindow.xaml;Styles\Common.xaml;Styles\NavigationBar.xaml;Views\BoatsAccessoryView.xaml;Views\BoatsView.xaml;Views\LoginView.xaml;
+361338009696
+2371900578795
+Controls\BoatCard.xaml;Controls\BoatListing.xaml;Controls\NavigationBar.xaml;MainWindow.xaml;Styles\Common.xaml;Styles\NavigationBar.xaml;Views\BoatsAccessoryView.xaml;Views\BoatsView.xaml;Views\LoginView.xaml;Views\RegisterView.xaml;
 
-False
+True
 

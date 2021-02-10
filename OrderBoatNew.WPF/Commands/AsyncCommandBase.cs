@@ -16,10 +16,9 @@ namespace OrderBoatNew.WPF.Commands
             set
             {
                 _isExecuting = value;
-                
             }
         }
-        
+
         public virtual bool CanExecute(object? parameter)
         {
             return !IsExecuting;
@@ -35,13 +34,7 @@ namespace OrderBoatNew.WPF.Commands
         }
 
         public abstract Task ExecuteAsync(object parameter);
-        
-        public event EventHandler? CanExecuteChanged;
 
-        protected void OnCanExecuteChanged()
-        {
-            CanExecuteChanged?.Invoke(this, new EventArgs());
-        }
-        
+        public event EventHandler? CanExecuteChanged;
     }
 }

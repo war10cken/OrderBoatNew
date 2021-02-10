@@ -9,7 +9,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using DevExpress.Xpf.DXBinding;
 using OrderBoatNew.WPF.Controls;
 using OrderBoatNew.WPF.ViewModels;
 using System;

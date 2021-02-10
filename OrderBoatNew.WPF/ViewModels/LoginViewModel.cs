@@ -19,23 +19,36 @@ namespace OrderBoatNew.WPF.ViewModels
             }
         }
 
-        private string _errorMessage;
+        public MessageViewModel ErrorMessageViewModel { get; }
 
         public string ErrorMessage
         {
-            get => _errorMessage;
+            set => ErrorMessageViewModel.Message = value;
+        }
+
+        private string _password;
+
+        public string Password
+        {
+            get => _password;
             set
             {
-                _errorMessage = value;
-                OnPropertyChanged(nameof(ErrorMessage));
+                _password = value;
+                OnPropertyChanged(nameof(Password));
             }
         }
 
         public ICommand LoginCommand { get; }
+        public ICommand ViewRegisterCommand { get; }
 
-        public LoginViewModel(IAuthenticator authenticator, IRenavigator renavigator)
+        public LoginViewModel(IAuthenticator authenticator,
+                              IRenavigator loginRenavigator,
+                              IRenavigator registerRenavigator)
         {
-            LoginCommand = new LoginCommand(authenticator, this, renavigator);
+            ErrorMessageViewModel = new MessageViewModel();
+
+            LoginCommand = new LoginCommand(authenticator, this, loginRenavigator);
+            ViewRegisterCommand = new RenavigateCommand(registerRenavigator);
         }
     }
 }

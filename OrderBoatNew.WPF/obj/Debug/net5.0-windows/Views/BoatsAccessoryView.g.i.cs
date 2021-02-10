@@ -53,7 +53,7 @@ namespace OrderBoatNew.WPF.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/OrderBoatNew.WPF;component/views/boatsaccessoryview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/OrderBoatNew.WPF;V1.0.0.0;component/views/boatsaccessoryview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\BoatsAccessoryView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

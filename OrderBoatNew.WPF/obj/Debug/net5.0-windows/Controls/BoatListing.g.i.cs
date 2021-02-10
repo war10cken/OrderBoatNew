@@ -86,7 +86,7 @@ namespace OrderBoatNew.WPF.Controls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/OrderBoatNew.WPF;component/controls/boatlisting.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/OrderBoatNew.WPF;V1.0.0.0;component/controls/boatlisting.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Controls\BoatListing.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

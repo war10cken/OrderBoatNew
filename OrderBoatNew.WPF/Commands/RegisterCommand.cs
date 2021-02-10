@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace OrderBoatNew.WPF.Commands
 {
@@ -38,6 +39,8 @@ namespace OrderBoatNew.WPF.Commands
                 switch (registration)
                 {
                     case RegistrationResult.Success:
+                        MessageBox.Show("Регистрация прошла успешно", "Инфо", MessageBoxButton.OK,
+                                        MessageBoxImage.Information);
                         _renavigator.Renavigate();
                         break;
 

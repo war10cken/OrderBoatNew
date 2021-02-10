@@ -20,6 +20,10 @@
                 <views:BoatsAccessoryView />
             </DataTemplate>
             
+            <DataTemplate DataType="{x:Type vm:LoginViewModel}">
+                <views:LoginView LoginCommand="{Binding LoginCommand}" />
+            </DataTemplate>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>

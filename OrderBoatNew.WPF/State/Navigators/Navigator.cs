@@ -20,12 +20,5 @@ namespace OrderBoatNew.WPF.State.Navigators
             }
         }
 
-        public ICommand UpdateCurrentViewModelCommand { get; set; }
-
-
-        public Navigator(IRootOrderBoarNewViewModelFactory viewModelFactory)
-        {
-            UpdateCurrentViewModelCommand = new UpdateViewModelCommand(this, viewModelFactory);
-        }
     }
 }

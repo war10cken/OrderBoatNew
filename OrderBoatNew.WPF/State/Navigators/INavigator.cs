@@ -6,12 +6,12 @@ namespace OrderBoatNew.WPF.State.Navigators
     public enum ViewType
     {
         Boats,
-        BoatsAccessory
+        BoatsAccessory,
+        Login
     }
     
     public interface INavigator
     {
         ViewModelBase CurrentViewModel { get; set; }
-        ICommand UpdateCurrentViewModelCommand { get; }
     }
 }

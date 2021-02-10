@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DevExpress.Mvvm.Native;
 using Microsoft.EntityFrameworkCore;
 using OrderBoatNew.Domain.Models;
 using OrderBoatNew.Domain.Services;

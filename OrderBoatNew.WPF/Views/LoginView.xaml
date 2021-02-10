@@ -5,37 +5,86 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:OrderBoatNew.WPF.Views"
              mc:Ignorable="d"
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid Background="LightBlue">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-            <RowDefinition Height="auto" />
-        </Grid.RowDefinitions>
+             d:DesignHeight="450" d:DesignWidth="800"
 
-        <Grid Grid.Row="0">
-            <TextBlock Text="Login: "
-                       HorizontalAlignment="Center" />
-            <TextBox Margin="0 20 0 0"
-                     Width="100" />
-        </Grid>
-        <Grid Grid.Row="1">
-            <TextBlock Text="Password: "
-                       HorizontalAlignment="Center" />
-            <TextBox Margin="0 20 0 0"
-                     Width="100" />
-        </Grid>
+             FontSize="18">
 
-        <Grid Grid.Row="2">
-            <Button
-                Width="100"
-                Height="20"
-                Content="Войти" />
-            <Button
-                Width="100"
-                Height="20"
-                Margin="0 55 0 0"
-                Content="Регистрация" />
+    <UserControl.Background>
+        <SolidColorBrush Color="{StaticResource LightBlueColor}"
+                         Opacity="0.8" />
+    </UserControl.Background>
+
+    <Border HorizontalAlignment="Center"
+            BorderBrush="{StaticResource BlueBrush}"
+            CornerRadius="3"
+            BorderThickness="2"
+            Padding="40"
+            Margin="25"
+            VerticalAlignment="Center"
+            Background="White">
+        
+        <Grid Grid.IsSharedSizeScope="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Форт Тартуга"
+                       FontSize="21"
+                       Grid.Row="0"
+                       HorizontalAlignment="Center" />
+
+            <Grid Grid.Row="1"
+                  Margin="0 20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                    <RowDefinition Height="auto" />
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0"
+                      Margin="0 10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition
+                            SharedSizeGroup="Label"
+                            Width="Auto" />
+                        <ColumnDefinition Width="150" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Grid.Column="0"
+                        Text="Username: "
+                        HorizontalAlignment="Center" />
+                    <TextBox
+                        Grid.Column="1"
+                        Margin="20 0 0 0    "
+                        Text="{Binding Username,
+                        UpdateSourceTrigger=PropertyChanged}" />
+                </Grid>
+
+                <Grid Grid.Row="1"
+                      Margin="0 10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition
+                            SharedSizeGroup="Label"
+                            Width="Auto" />
+                        <ColumnDefinition Width="150" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock
+                        Grid.Column="0"
+                        Text="Password: "
+                        HorizontalAlignment="Center" />
+                    <PasswordBox Name="PasswordBox"
+                                 Margin="20 0 0 0"
+                                 Grid.Column="1" />
+                </Grid>
+
+                <Button Grid.Row="2"
+                        Grid.Column="2"
+                        HorizontalAlignment="Center"
+                        Click="Login_Click"
+                        Margin="0 10"
+                        Content="Войти"
+                        IsDefault="True" />
+            </Grid>
         </Grid>
-    </Grid>
+    </Border>
 </UserControl>

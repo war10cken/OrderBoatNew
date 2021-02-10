@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
-using DevExpress.Mvvm;
 using OrderBoatNew.Domain.Models;
 using OrderBoatNew.Domain.Services;
 using OrderBoatNew.WPF.ViewModels;

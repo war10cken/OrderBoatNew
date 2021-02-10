@@ -74,7 +74,7 @@ D:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\bin\Debug\net5.0-windows\OrderBoa
 D:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\obj\Debug\net5.0-windows\OrderBoatNew.WPF.csproj.CopyComplete
 D:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\obj\Debug\net5.0-windows\Controls\BoatListing.g.cs
 D:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\obj\Debug\net5.0-windows\Controls\BoatListing.baml
-D:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\bin\Debug\net5.0-windows\DevExpress.Mvvm.UI.dll
-D:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\bin\Debug\net5.0-windows\DevExpress.Mvvm.dll
 D:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\obj\Debug\net5.0-windows\Views\LoginView.g.cs
 D:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\obj\Debug\net5.0-windows\Views\LoginView.baml
+D:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\bin\Debug\net5.0-windows\Bogus.dll
+D:\RiderProjects\OrderBoatNew\OrderBoatNew.WPF\bin\Debug\net5.0-windows\Microsoft.AspNet.Identity.Core.dll

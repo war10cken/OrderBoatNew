@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TNTm93SVX3x9BJfjeXf7VhZvs+zZYbIQTvTTLdXsXqrUoplpI/fA8mkSnKch1Rw9fSH78LWHrVHvaD0XNO0O5A==",
+  "dgSpecHash": "3w/gQ8HOv/HXZUHW5k/3z1NbSHgFgoPgewnDpw3YzuYkhlcPHfaiwo/1EWnAWLDFubDQ3vy93yJbnyAsGlZ7SQ==",
   "success": true,
   "projectFilePath": "D:\\RiderProjects\\OrderBoatNew\\ConsoleApp2\\ConsoleApp2.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\garha\\.nuget\\packages\\bogus\\33.0.1\\bogus.33.0.1.nupkg.sha512",
+    "C:\\Users\\garha\\.nuget\\packages\\microsoft.aspnet.identity.core\\2.2.3\\microsoft.aspnet.identity.core.2.2.3.nupkg.sha512",
     "C:\\Users\\garha\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\garha\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
     "C:\\Users\\garha\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.0.1\\microsoft.data.sqlclient.sni.runtime.2.0.1.nupkg.sha512",
@@ -99,5 +101,16 @@
     "C:\\Users\\garha\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\garha\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.AspNet.Identity.Core",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

@@ -2,7 +2,7 @@
 
 namespace OrderBoatNew.WPF.ViewModels.Factories
 {
-    public interface IRootOrderBoarNewViewModelFactory
+    public interface IOrderBoarNewViewModelFactory
     {
         ViewModelBase CreateViewModel(ViewType viewType);
     }

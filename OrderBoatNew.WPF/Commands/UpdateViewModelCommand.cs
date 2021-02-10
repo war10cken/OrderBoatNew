@@ -10,9 +10,9 @@ namespace OrderBoatNew.WPF.Commands
     public class UpdateViewModelCommand : ICommand
     {
         private readonly INavigator _navigator;
-        private readonly IRootOrderBoarNewViewModelFactory _viewModelFactory;
+        private readonly IOrderBoarNewViewModelFactory _viewModelFactory;
 
-        public UpdateViewModelCommand(INavigator navigator, IRootOrderBoarNewViewModelFactory viewModelFactory)
+        public UpdateViewModelCommand(INavigator navigator, IOrderBoarNewViewModelFactory viewModelFactory)
         {
             _navigator = navigator;
             _viewModelFactory = viewModelFactory;

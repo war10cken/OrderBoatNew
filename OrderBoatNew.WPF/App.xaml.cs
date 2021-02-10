@@ -32,6 +32,7 @@ namespace OrderBoatNew.WPF
 
         private IServiceProvider CreateServiceProvider()
         {
+            //Madie_Berge99 1234
             IServiceCollection services = new ServiceCollection();
 
             services.AddSingleton<OrderBoatNewDbContextFactory>();
@@ -44,22 +45,27 @@ namespace OrderBoatNew.WPF
 
             services.AddSingleton<IPasswordHasher, PasswordHasher>();
 
-            services.AddSingleton<IRootOrderBoarNewViewModelFactory, RootOrderBoatNewViewModelFactory>();
-            services.AddSingleton<IOrderBoatNewViewModelFactory<BoatCardViewModel>, BoatCardViewModelFactory>();
-            services.AddSingleton<IOrderBoatNewViewModelFactory<BoatViewModel>, BoatViewModelFactory>();
-            services.AddSingleton<IOrderBoatNewViewModelFactory<BoatAccessoryViewModel>, BoatsAccessoryViewModelFactory>();
-            
-            services.AddSingleton<IOrderBoatNewViewModelFactory<LoginViewModel>>(s =>
-                                                                                     new
-                                                                                         LoginViewModelFactory(s.GetRequiredService<IAuthenticator>(),
-                                                                                                               new
-                                                                                                                   ViewModelFactoryRenavigator
-                                                                                                                   <BoatViewModel
-                                                                                                                   >(s.GetRequiredService<INavigator>(),
-                                                                                                                     s.GetRequiredService
-                                                                                                                     <IOrderBoatNewViewModelFactory
-                                                                                                                         <BoatViewModel
-                                                                                                                         >>())));
+            services.AddSingleton<IOrderBoarNewViewModelFactory, OrderBoatNewViewModelFactory>();
+            services.AddSingleton<BoatViewModel>(s => new BoatViewModel(BoatCardViewModel.LoadBoatCardViewModel(s.GetRequiredService<IDataService<Model>>(),
+                                                                                                                s.GetRequiredService<IDataService<Wood>>(),
+                                                                                                                s.GetRequiredService<IColorService>())));
+
+            services.AddSingleton<CreateViewModel<BoatViewModel>>(s => s.GetRequiredService<BoatViewModel>);
+
+            services.AddSingleton<CreateViewModel<BoatAccessoryViewModel>>(s =>
+                                                                           {
+                                                                               return
+                                                                                   () => new BoatAccessoryViewModel();
+                                                                           });
+
+            services.AddSingleton<ViewModelDelegateRenavigator<BoatViewModel>>();
+            services.AddSingleton<CreateViewModel<LoginViewModel>>(s =>
+                                                                   {
+                                                                       return () =>
+                                                                                  new
+                                                                                      LoginViewModel(s.GetRequiredService<IAuthenticator>(),
+                                                                                                     s.GetRequiredService<ViewModelDelegateRenavigator<BoatViewModel>>());
+                                                                   });
 
             services.AddScoped<INavigator, Navigator>();
             services.AddScoped<IAuthenticator, Authenticator>();

@@ -37,13 +37,11 @@ namespace OrderBoatNew.WPF.Views
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-
             if (LoginCommand is not null)
             {
                 string password = PasswordBox.Password;
                 LoginCommand.Execute(password);
             }
-            
         }
     }
 }

@@ -8,7 +8,7 @@ namespace OrderBoatNew.WPF.ViewModels
 {
     public class MainViewModel : ViewModelBase
     {
-        private readonly IRootOrderBoarNewViewModelFactory _viewModelFactory;
+        private readonly IOrderBoarNewViewModelFactory _viewModelFactory;
         
         public INavigator Navigator { get; set; }
         public IAuthenticator Authenticator { get; }
@@ -17,7 +17,7 @@ namespace OrderBoatNew.WPF.ViewModels
 
 
         public MainViewModel(INavigator navigator, IAuthenticator authenticator,
-                             IRootOrderBoarNewViewModelFactory viewModelFactory)
+                             IOrderBoarNewViewModelFactory viewModelFactory)
         {
             Navigator = navigator;
             Authenticator = authenticator;
